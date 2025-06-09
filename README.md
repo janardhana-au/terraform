@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 In the context of the Terraform AWS provider, **profile** refers to a named profile defined in your AWS credentials configuration files—typically located at:
 
 ~/.aws/credentials (for access keys)
@@ -56,3 +57,6 @@ IAM role (if running from EC2, ECS, etc.)
 ***~/.aws/config
 This file requires the profile prefix for non-default profiles: ***
 
+=======
+# terraform
+>>>>>>> ec255e7a416ec349c0b3c4962c66dbbe799e3d02
