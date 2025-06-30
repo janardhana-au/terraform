@@ -1,6 +1,10 @@
 
 for i in 00-vpc/ 10-sg /20-bastion/ ; do cd $i; terraform apply -auto-approve ; cd ..;done
 
+for i in $(ls -d */); do cd "$i" ; terraform destroy -auto-approve ; cd ..; done
+
+
+
 In the context of the Terraform AWS provider, **profile** refers to a named profile defined in your AWS credentials configuration files—typically located at:
 
 ~/.aws/credentials (for access keys)
