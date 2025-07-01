@@ -13,13 +13,13 @@ provider "aws" {
 }
 
 module "vpc" {
-    #source = "../vpc-module"
-    source = "git::https://github.com/janardhana-au/terraform.git?ref=main"
+    source = "../../vpc-module"
+    # source = "git::https://github.com/janardhana-au/terraform-vpc-module.git?ref=main"
     cidr_block = var.cidr_block
     project = var.project
     environment = var.environment
     public_subnet_cidrs = var.public_cidrs
     private_subnet_cidrs = var.private_cidrs
     database_subnet_cidrs = var.database_cidrs
-    is_peering_req = true
+    # is_peering_req = true
 }
